@@ -1,0 +1,454 @@
+@font-face {
+    font-family: Billabong;
+    src: url(src/fonts/FontsFree-Net-Billabong.ttf);
+}
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    background-color: #6aaff8;
+}
+
+*::-moz-selection {
+    background: #6aaff8;
+}
+ 
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+:root{
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    cursor:default;
+}
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main-container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px 0px;
+    gap: 10px;
+}
+.mockup-container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 50%;
+    padding: 0px 10px;
+}
+.login-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 50%;
+    padding: 0px 10px;
+    flex-direction: column;
+}
+.form-container{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(218, 218, 218);
+    padding: 0px 40px;
+}
+.instagramHeading{
+    font-family:Billabong;
+    font-size: 6.5rem;
+    font-weight: 100;
+    color: rgb(17, 17, 17);
+    margin:30px 0;
+}
+.instagramHeading::selection {
+    background-color: transparent;
+}
+
+.instagramHeading::-moz-selection {
+    background: transparent;
+}
+ 
+/* form css */
+form{
+    width: 100%;
+}
+.email-password-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.email-div,.password-div{
+    position: relative;
+    width: fit-content;
+    height: 38px;
+    width: 100%;
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 5px;
+    background-color: rgba(135, 207, 235, 0.041);
+}
+
+#email{
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 10px;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* margin-bottom: 70px; */
+    color: rgb(0, 0, 0);
+    /* background-color: red; */
+    border: none;
+    /* background: skyblue; */
+    padding-top: 30px;
+}
+#password{
+    background-color: transparent;
+    font-size: 1.2rem;
+    padding: 10px;
+    height: 50%;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    padding-top: 30px;
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border: none;
+}
+#email:focus{
+    outline: none;
+}
+#password:focus{
+    outline: none;
+}
+#email-label::selection,#password-label::selection {
+    background-color: transparent;
+}
+
+#email-label::-moz-selection,#password-label::-moz-selection {
+    background: transparent;
+}
+ 
+
+#email-label,#password-label{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    left: 10px;
+    color: rgb(116, 116, 116);
+    font-size: 1.2rem;
+    font-weight: 400;
+    opacity: 1;
+    transition-duration:.3s;
+    /* transform: rotateX(-90deg); */
+    transform-origin: bottom;
+}
+#email-label.active{
+    transition-duration:.3s;
+    transform: translateY(-10px);
+    /* left: 0; */
+    font-size: 1rem;
+
+}
+#password-label.active{
+    transition-duration:.3s;
+    transform: translateY(-10px);
+    /* left: 0; */
+    font-size: 1rem;
+
+}
+#eyetoggle{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    right: 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    font-weight: 500;
+}
+#hide{
+display: none;
+}
+#show{
+display: block;
+}
+#show::selection,#hide::selection {
+    background-color: transparent;
+}
+
+#show::-moz-selection,#hide::-moz-selection {
+    background: transparent;
+}
+ 
+
+::placeholder{
+    /* chrome,firefox,opera,safari */
+    font-size: 1.5rem;
+}
+:-ms-input-placeholder{
+    /* internet explorer 10-11 */
+    font-size: 1.5rem;
+}
+::-ms-input-placeholder{
+    /* microsoft edge */
+    font-size: 1.5rem;
+}
+#email:focus::placeholder,#password:focus::placeholder{
+    font-size: 0;
+}
+.login-btn-div{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+#login-btn{
+    width: 100%;
+    height: 35px;
+    background-color:#6aaff8;
+    border: none;
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/* form css */     /* or container */
+.orContainer{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.orHeading{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: gray;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leftline,.rightline{
+    width: 40%;
+    height: 1px;
+    background:rgb(214, 214, 214);
+}
+
+.facebook-login-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 5px;
+}
+.loginfacebook{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #3e4985;
+    text-decoration: none;
+
+}
+.forgot-password-div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px;
+}
+.forgot-password-div a{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(24, 24, 88);
+    text-decoration: none;
+}
+.signup-container{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(218, 218, 218);
+    margin-top: 10px;
+    height: 65px;
+    gap: 5px;
+}
+.signup-line{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 400;
+}
+.signup-container a{
+    font-size: 1.5rem;
+    color: rgb(83, 140, 224);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.getTheAppContainer{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid rgb(218, 218, 218); */
+    margin-top: 15px;
+    height: 65px;
+    gap: 10px;
+
+}
+.gettheapp{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 400;
+}
+.downloadContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+.bottomContainer{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.links{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+} 
+.links a {
+    padding: 0 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: gray;
+    font-weight: 500;
+}
+.copyright-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyright-container p{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: gray;
+    font-weight: 500;
+}
+/* responsive code below*/
+@media screen and (max-width:1920px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    html {
+        font-size: 60%;
+    }
+    .form-container,.signup-container,.getTheAppContainer{
+        width: 350px;
+    }
+   
+}
+
+@media screen and (max-width:998px) {
+   
+    .mockup-container{
+        display: none;
+    }
+    .login-container{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width:768px) {
+  
+ .bottomContainer{
+    padding: 0 30px;
+ }
+}
+
+@media screen and (max-width:500px) {
+   
+
+}
+
+@media screen and (max-width:450px) {
+    .main-container{
+        padding: 0;
+        margin: 0;
+    }
+    .login-container{
+        padding: 0;
+    }
+  .form-container,.signup-container{
+    width: 80%;
+    padding: 0;
+    border: none;
+  }
+  .getTheAppContainer{
+    width: 100%;
+  }
+}
+
+
+/* responsive code above */
+
+
+@media screen and (max-width:375px) {
+   
+}
+@media screen and (max-width:300px) {
+   
+}
+
+
